@@ -53,7 +53,7 @@ cuda:1.4:
                 Pkg.develop(PackageSpec(path=pwd()));
                 Pkg.build();'
     - julia -e 'using Pkg;
-                Pkg.add(PackageSpec(name="AMDGPUnative", rev="jps/gpucompiler"));
+                Pkg.add(PackageSpec(name="AMDGPUnative", rev="master"));
                 Pkg.test("AMDGPUnative");'
 
 amdgpunative:1.4:
