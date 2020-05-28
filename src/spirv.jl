@@ -38,7 +38,7 @@ function process_kernel!(job::CompilerJob{SPIRVCompilerTarget}, mod::LLVM.Module
     end
     callconv!(kernel, LLVM.API.LLVMSPIRKERNELCallConv)
 
-    return
+    return kernel
 end
 
 function add_lowering_passes!(job::CompilerJob{SPIRVCompilerTarget}, pm::LLVM.PassManager)
